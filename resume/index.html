@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Resume - Tahmid Tanzim</title>
+  <title>Tahmid Tanzim, Resume v8.1</title>
 
   <!-- Normalize or reset CSS with your favorite library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -28,10 +28,20 @@
       text-align: center;
     }
 
+    .content {
+      font-size: 14px;
+    }
+
     .grid-container {
       display: grid;
+    }
+
+    .grid-template-col-35-65 {
       grid-template-columns: 35% 65%;
-      font-size: 14px;
+    }
+
+    .grid-template-col-30-70 {
+      grid-template-columns: 30% 70%;
     }
 
     .grid-item {}
@@ -49,8 +59,10 @@
 
     <h2 class="middle">Tahmid Tanzim</h2>
     <div class="middle" style="font-size: 14px;">House 39, Road 11 (New), Dhanmondi R/A, Dhaka 1209.</div>
-    <div class="middle" style="font-size: 14px; padding-bottom: 5px;">+8801711643096 • <a
-        href="mailto:tahmid.tanzim@gmail.com">tahmid.tanzim@gmail.com</a></div>
+    <div class="middle" style="font-size: 14px; padding-bottom: 5px;">
+      +880 17 1164 3096 • <a
+        href="mailto:tahmid.tanzim@gmail.com">tahmid.tanzim@gmail.com</a>
+      </div>
 
     <br>
 
@@ -58,7 +70,7 @@
     <h4 class="middle" style="margin: 0;">Professional Summary</h4>
     <hr>
 
-    <div style="font-size: 14px;">
+    <div class="content">
       Passionate Software Engineer with more than 9 years of comprehensive experience in the full software development
       life cycle of customer-facing applications.
       Highly analytical and experienced in both frontend and backend development.
@@ -71,24 +83,29 @@
     <h4 class="middle" style="margin: 0;">Technical Proficiency</h4>
     <hr>
 
-    <div style="font-size: 14px;">
-      <ul>
-        <li><strong>Programming Languages:</strong> Python 3, JavaScript ES6, SQL, HTML5, CSS3</li>
-        <li><strong>Libraries & Frameworks:</strong> Django, Node.js, Express.js, React, Redux, Bootstrap, Material-UI,
-          Pandas</li>
-        <li><strong>Databases:</strong> PostgreSQL, MongoDB, Redis</li>
-        <li><strong>Tools:</strong> Linux, Docker, Git, AWS</li>
-        <li><strong>Industry knowledge:</strong> Data structure, Algorithm, Object-oriented design, Microservices,
-          RESTful API</li>
-      </ul>
+    <div class="grid-container grid-template-col-30-70 content">
+      <div class="grid-item"><strong>Programming Languages</strong></div>
+      <div class="grid-item">Python 3, JavaScript ES6, SQL, HTML5, CSS3</div>
+      <div class="grid-item"><strong>Libraries & Frameworks</strong></div>
+      <div class="grid-item">Django, Node.js, Express.js, React, Redux, Bootstrap, Material-UI, Pandas</div>
+      <div class="grid-item"><strong>Databases</strong></div>
+      <div class="grid-item">PostgreSQL, MongoDB, Redis</div>
+      <div class="grid-item"><strong>Tools</strong></div>
+      <div class="grid-item">Linux, Docker, Git, AWS</div>
+      <div class="grid-item"><strong>Industry knowledge</strong></div>
+      <div class="grid-item">Data structure, Algorithm, Object-oriented design, Microservices,
+        RESTful API</div>
     </div>
 
     <hr>
     <h4 class="middle" style="margin: 0;">Professional Experience</h4>
     <hr>
 
-    <div style="font-size: 14px;">
-      <div style="font-weight: bold;">PriyoSys Limited</div>
+    <div class="content">
+      <div>
+        <span style="font-weight: bold;margin-right: 5px;">PriyoSys Limited</span>
+        <span>Dhaka, BD</span>
+      </div>
       <div>
         <span style="float: left; font-weight: bold;">Sr Software Engineer</span>
         <span style="float: right;">Jan 2020 - Feb 2021</span>
@@ -107,8 +124,11 @@
 
     <br>
 
-    <div style="font-size: 14px;">
-      <div style="font-weight: bold;">iPay Systems Limited</div>
+    <div class="content">
+      <div>
+        <span style="font-weight: bold;margin-right: 5px;">iPay Systems Limited</span>
+        <span>Dhaka, BD</span>
+      </div>
       <div>
         <span style="float: left; font-weight: bold;">Sr Software Engineer</span>
         <span style="float: right;">Jan 2016 - Dec 2019</span>
@@ -129,8 +149,11 @@
 
     <br>
 
-    <div style="font-size: 14px;">
-      <div style="font-weight: bold;">RootNext Solutions Limited</div>
+    <div class="content">
+      <div>
+        <span style="font-weight: bold;margin-right: 5px;">RootNext Solutions Limited</span>
+        <span>Dhaka, BD</span>
+      </div>
       <div>
         <span style="float: left; font-weight: bold;">Sr Software Engineer (Team Lead)</span>
         <span style="float: right;">Sep 2014 - Jan 2016</span>
@@ -154,8 +177,11 @@
     <h4 class="middle" style="margin: 0;">Volunteer Support</h4>
     <hr>
 
-    <div style="font-size: 14px;">
-      <div style="font-weight: bold;">Canadian Information Processing Society (CIPS)</div>
+    <div class="content">
+      <div>
+        <span style="font-weight: bold;margin-right: 5px;">Canadian Information Processing Society (CIPS)</span>
+        <span>Mississauga, ON</span>
+      </div>
       <div>
         <span style="float: left; font-weight: bold;">Experience Review Committee Member</span>
         <span style="float: right;">Aug 2018 - continue</span>
@@ -173,13 +199,13 @@
     <h4 class="middle" style="margin: 0;">Education & Credentials</h4>
     <hr>
 
-    <div style="font-size: 14px;">
+    <div class="content">
       <div>
-        <span style="font-weight: bold;">American International University - Bangladesh</span>
-        <span>B.Sc. Computer Science and Engineering</span>
+        <span><strong>American International University - Bangladesh</strong></span>
+        <span>B.Sc. Computer Science and Engineering, CGPA 3.86 out of 4</span>
       </div>
       <div>
-        <span style="font-weight: bold;">Canadian Information Processing Society (CIPS)</span>
+        <span><strong>Canadian Information Processing Society (CIPS)</strong></span>
         <span>Certified member and an authorized Information Systems Professional of Canada (I.S.P.)</span>
       </div>
     </div>
@@ -188,7 +214,7 @@
     <h4 class="middle" style="margin: 0;">Reference Link</h4>
     <hr>
 
-    <div class="grid-container">
+    <div class="grid-container grid-template-col-35-65 content">
       <div class="grid-item">I.S.P Certification (CIPS) License</div>
       <div class="grid-item"><a href="https://www.credential.net/41ahe9mh" , target="_blank">11587917</a></div>
       <div class="grid-item">Linkedin</div>
