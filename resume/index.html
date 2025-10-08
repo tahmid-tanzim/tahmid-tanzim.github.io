@@ -21,43 +21,8 @@
   <!-- Load paper.css for happy printing -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
 
-  <!-- Set page size here: A5, A4 or A3 -->
-  <!-- Set also "landscape" if you need -->
-  <style>
-    @page {
-      size: A4
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .middle {
-      text-align: center;
-    }
-
-    .content {
-      font-size: 14px;
-    }
-
-    .grid-container {
-      display: grid;
-    }
-
-    .grid-template-col-35-65 {
-      grid-template-columns: 35% 65%;
-    }
-
-    .grid-template-col-25-75 {
-      grid-template-columns: 25% 75%;
-    }
-
-    .title {
-      margin-block-start: 0.8em;
-      margin-block-end: 0.5em;
-    }
-
-  </style>
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- Set "A5", "A4" or "A3" for class name -->
@@ -67,16 +32,16 @@
 
   <!-- Each sheet element should have the class "sheet" -->
   <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
-  <section class="sheet padding-10mm" style='font-family: "Times New Roman", Times, serif;'>
+  <section class="sheet padding-10mm">
 
     <h2 class="middle title">Tahmid Tanzim Lupin</h2>
-    <div class="middle" style="font-size: 14px;">Kitchener ON, Canada</div>
-    <div class="middle" style="font-size: 14px; padding-bottom: 15px;">
+    <div class="middle contact-info">Kitchener ON, Canada</div>
+    <div class="middle contact-info-with-spacing">
       <a href="tel:+13062614465">+1 (306) 261 - 4465</a> • <a href="mailto:tahmid.tanzim@gmail.com">tahmid.tanzim@gmail.com</a>
     </div>
 
     <hr>
-    <h4 class="middle" style="margin: 0;">Professional Summary</h4>
+    <h4 class="middle section-title">Professional Summary</h4>
     <hr>
 
     <div class="content">
@@ -84,7 +49,7 @@
     </div>
 
     <hr>
-    <h4 class="middle" style="margin: 0;">Technical Proficiency</h4>
+    <h4 class="middle section-title">Technical Proficiency</h4>
     <hr>
 
     <div class="grid-container grid-template-col-25-75 content">
@@ -103,19 +68,19 @@
     </div>
 
     <hr>
-    <h4 class="middle" style="margin: 0;">Professional Experience</h4>
+    <h4 class="middle section-title">Professional Experience</h4>
     <hr>
 
     <div class="content">
-      <div>
-        <span style="font-weight: bold;margin-right: 5px;"><a href="https://presto.com/" target="_blank">Presto Phoenix Inc.</a></span>
+      <div class="job-header">
+        <span class="company-name"><a href="https://presto.com/" target="_blank">Presto Phoenix Inc.</a></span>
         <span>Saskatoon, SK, Canada</span>
       </div>
-      <div>
-        <span style="float: left; font-weight: bold;">Software Engineer</span>
-        <span style="float: right;">Nov 2022 - Continue</span>
+      <div class="job-title-row">
+        <span class="job-title">Software Engineer</span>
+        <span class="job-date">Nov 2022 - Continue</span>
       </div>
-      <div style="clear: both;"></div>
+      <div class="clearfix"></div>
       <ul class="job-description">
         <li>Developed voice AI solutions with LLMs (GPT-4o, Claude 3.5) and Python for intelligent conversational interfaces</li>
         <li>Implemented RAG pipelines with Vector Databases (FAISS, Chroma) to enhance AI accuracy and context-awareness</li>
@@ -129,15 +94,15 @@
     <br>
 
     <div class="content">
-      <div>
-        <span style="font-weight: bold;margin-right: 5px;"><a href="https://www.priyo.com/" target="_blank">PriyoSys Limited</a></span>
+      <div class="job-header">
+        <span class="company-name"><a href="https://www.priyo.com/" target="_blank">PriyoSys Limited</a></span>
         <span>Dhaka, BD</span>
       </div>
-      <div>
-        <span style="float: left; font-weight: bold;">Sr Software Engineer</span>
-        <span style="float: right;">Jan 2020 - Feb 2021</span>
+      <div class="job-title-row">
+        <span class="job-title">Sr Software Engineer</span>
+        <span class="job-date">Jan 2020 - Feb 2021</span>
       </div>
-      <div style="clear: both;"></div>
+      <div class="clearfix"></div>
       <ul class="job-description">
         <li>Developed cross-platform desktop application with Electron, React.js, Redux, HTML5, CSS3/SCSS</li>
         <li>Designed and developed backend services with Python 3, Django REST Framework, PostgreSQL, MongoDB</li>
@@ -152,15 +117,15 @@
     <br>
 
     <div class="content">
-      <div>
-        <span style="font-weight: bold;margin-right: 5px;"><a href="https://www.ipay.com.bd/" target="_blank">iPay Systems Limited</a></span>
+      <div class="job-header">
+        <span class="company-name"><a href="https://www.ipay.com.bd/" target="_blank">iPay Systems Limited</a></span>
         <span>Dhaka, BD</span>
       </div>
-      <div>
-        <span style="float: left; font-weight: bold;">Sr Software Engineer</span>
-        <span style="float: right;">Jan 2016 - Dec 2019</span>
+      <div class="job-title-row">
+        <span class="job-title">Sr Software Engineer</span>
+        <span class="job-date">Jan 2016 - Dec 2019</span>
       </div>
-      <div style="clear: both;"></div>
+      <div class="clearfix"></div>
       <ul class="job-description">
         <li>Developed single-page applications (SPA) with React.js, Redux, HTML5, CSS3/SCSS, Firebase</li>
         <li>Designed several microservice architecture and developed many RESTful APIs with Java Spring Boot, Node.js,
@@ -178,70 +143,26 @@
 
   </section>
 
-  <section class="sheet padding-10mm" style='font-family: "Times New Roman", Times, serif;'>
-    <div style="padding: 25px;"></div>
-
-    <!-- <div class="content">
-      <div>
-        <span style="font-weight: bold;margin-right: 5px;"><a href="https://www.rootnext.com/" target="_blank">RootNext Solutions Limited</a></span>
-        <span>Dhaka, BD</span>
-      </div>
-      <div>
-        <span style="float: left; font-weight: bold;">Sr Software Engineer (Team Lead)</span>
-        <span style="float: right;">Sep 2014 - Jan 2016</span>
-      </div>
-      <div style="clear: both;"></div>
-      <ul class="job-description">
-        <li>Designed and developed several front-end and back-end software applications with Java Spring Boot, Python 3,
-          Django REST Framework, PostgreSQL, React & Redux</li>
-        <li>Maintained test-driven development, Linux server, and Github repository</li>
-        <li>Solved production issues and managed project tracking with Redmine and Pivotal Tracker</li>
-        <li>Maintained Amazon Web Services (AWS) and Heroku deployment</li>
-        <li>Performed continuous integration and deployment with Jenkins</li>
-      </ul>
-    </div> -->
+  <section class="sheet padding-10mm">
+    <div class="spacing-top"></div>
 
     <hr>
-    <h4 class="middle" style="margin: 0;">Volunteer Support</h4>
-    <hr>
-
-    <div class="content">
-      <div>
-        <span style="font-weight: bold;margin-right: 5px;">
-          <a href="https://cips.ca/" target="_blank">Canadian Information Processing Society (CIPS)</a>
-        </span>
-        <span>Mississauga, ON, Canada</span>
-      </div>
-      <div>
-        <span style="float: left; font-weight: bold;">Experience Review Committee Member</span>
-        <span style="float: right;">Aug 2018 - continue</span>
-      </div>
-      <div style="clear: both;"></div>
-      <ul class="job-description">
-        <li>Reviewed I.S.P / BOK application based on the category</li>
-        <li>Checked that the applicant meets experience requirements for recertification</li>
-        <li>Performed experience assessment based on various guidelines</li>
-        <li>Evaluated and rate the individual work positions on the application</li>
-      </ul>
-    </div>
-
-    <hr>
-    <h4 class="middle" style="margin: 0;">Education & Credentials</h4>
+    <h4 class="middle section-title">Education & Credentials</h4>
     <hr>
 
     <div class="content">
       <div>
         <span><strong>American International University - Bangladesh</strong></span>
-        <span>B.Sc. Computer Science and Engineering, CGPA 3.86 out of 4</span>
+        <span>B.Sc. Computer Science and Engineering, CGPA 3.86 out of 4.00</span>
       </div>
     </div>
 
     <hr>
-    <h4 class="middle" style="margin: 0;">Reference Link</h4>
+    <h4 class="middle section-title">Reference Link</h4>
     <hr>
 
-    <div class="grid-container grid-template-col-35-65 content">
-      <div class="grid-item">Linkedin</div>
+    <div class="grid-container grid-template-col-25-75 content">
+      <div class="grid-item">LinkedIn</div>
       <div class="grid-item"><a href="https://www.linkedin.com/in/tahmidtanzim"
           target="_blank">https://www.linkedin.com/in/tahmidtanzim</a></div>
       <div class="grid-item">GitHub</div>

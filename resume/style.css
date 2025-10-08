@@ -1,0 +1,109 @@
+/* Page Setup */
+@page {
+  size: A4;
+}
+
+/* Base Styles */
+.sheet {
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography */
+.middle {
+  text-align: center;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.title {
+  margin-block-start: 0.8em;
+  margin-block-end: 0.5em;
+}
+
+.section-title {
+  margin: 0;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.contact-info-with-spacing {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+}
+
+.grid-template-col-25-75 {
+  grid-template-columns: 25% 75%;
+}
+
+.grid-item {
+  /* Grid items styling can be added here if needed */
+}
+
+/* Job/Experience Sections */
+.job-header {
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.job-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-date {
+  /* Style for dates on the right */
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Utility Classes */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.spacing-top {
+  padding: 25px;
+}
+
+/* Job Description List */
+.job-description {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.job-description li {
+  margin-bottom: 3px;
+}
